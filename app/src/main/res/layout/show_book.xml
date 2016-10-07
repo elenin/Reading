@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="20sp"
-        android:text="不该存在的技术"
+        android:text=""
         android:maxLines="2"
         android:textColor="@color/dark_gray"
         android:layout_marginBottom="5dp"/>
@@ -21,8 +21,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="14sp"
-        android:text="作者"
-        android:maxLines="2"
+        android:text=""
+        android:maxLines="1"
         android:textColor="@color/dark_gray"
         android:layout_marginBottom="5dp"/>
     <LinearLayout
