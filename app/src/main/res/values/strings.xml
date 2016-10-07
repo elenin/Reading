@@ -3,4 +3,12 @@
     <string name="exit">退出</string>
     <string name="title">阅读管理</string>
     <string name="add">新建</string>
+    <string name="book_info">图书信息</string>
+    <string name="book_name">书名</string>
+    <string name="book_author">作者</string>
+    <string name="total_pages">总页数</string>
+    <string name="update_progress">更新进度</string>
+    <string name="new_progress">新进度</string>
+    <string name="input">input</string>
+    <string name="sure">确定</string>
 </resources>

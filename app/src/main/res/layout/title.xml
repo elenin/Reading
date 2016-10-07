@@ -4,6 +4,7 @@
     android:layout_height="50dp"
     android:background="@color/colorPrimary">
     <TextView
+        android:id="@+id/back"
         android:clickable="true"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
@@ -22,6 +23,7 @@
         android:layout_centerInParent="true"
         android:gravity="center"/>
     <TextView
+        android:id="@+id/add_book"
         android:clickable="true"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"

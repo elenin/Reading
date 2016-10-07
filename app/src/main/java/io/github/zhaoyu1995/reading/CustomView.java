@@ -14,7 +14,6 @@ public class CustomView extends View {
     private int current_pages;//当前已看页数
     private int width;
     private int height;
-    private int padding = 10;
 
     public CustomView(Context context) {
         super(context);
@@ -42,9 +41,10 @@ public class CustomView extends View {
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
 
-        canvas.drawRect(padding, height/8*3, width-padding, height/8*5, bg_paint);
+        int padding = 10;
+        canvas.drawRect(padding, height/8*3, width- padding, height/8*5, bg_paint);
         canvas.drawRect(padding, height/8*3,
-                padding+(width-2*padding)*current_pages/total_pages, height/8*5, fg_paint);
+                padding +(width-2* padding)*current_pages/total_pages, height/8*5, fg_paint);
     }
 
     private void init() {
@@ -57,11 +57,11 @@ public class CustomView extends View {
     }
 
     public void drawProgress(int total, int cur) {
-        this.total_pages = total;
-        this.current_pages = cur;
         if (cur > total) {
             cur = total;
         }
+        this.total_pages = total;
+        this.current_pages = cur;
         invalidate();
     }
 }
